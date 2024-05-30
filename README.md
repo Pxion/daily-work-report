@@ -33,3 +33,6 @@
 
 ### 2024.5.29
 使用RCLCPP编写节点；colcon编译失败，寻求解决方法暂未果。
+
+### 2024.5.30
+成功解决colcon编译问题，重新把文件删除重走了一遍用rclcpp编写过程（可能是一开始在修改CMakeLists.txt时把第二段使用install指令将其安装到install目录的代码写到了package。xml里）；使用面向对象方法编写ros2节点。
