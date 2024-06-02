@@ -48,7 +48,7 @@ colcon使用进阶；ros2话题入门；创建一个话题控制节点，第一�
 1. package.xml中rclcpp 依赖项存在冗余，存在重复声明；
 2. CMakeLists.txt 文件中也存在重复的声明;
 3. 代码存在几个语法和格式上的错误。
-解决方法：
+####解决方法：
 1. 删除了重复的 <buildtool_depend>ament_cmake</buildtool_depend> 和 <depend>rclcpp</depend> 声明；
 2. 确保每个 add_executable 和 ament_target_dependencies 只声明一次；
 3. 修改有误代码，并确保所有必要的头文件都被包含。
